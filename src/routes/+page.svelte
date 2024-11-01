@@ -3,9 +3,9 @@
 		<img alt="bg" class=" camera-focus bg h-[70%]" src="Background.png" />
 		<img alt="tree right" class="tree-r right-[-25%] top-[-18%]" src="Layer 2.png" />
 		<img alt="tree left" class="tree-l left-[-6%] top-[0%]" src="Layer 2 copy.png" />
-		<img alt="text" class=" floating-text top-[70%]" src="House Starks.png" />
-		<img alt="date" class="floating-text top-[84%] left-[20%]" src="02.10.2024.png" />
-		<img alt="text" class="floating-text top-[20%]" src="Over The Gard.png" />
+		<img alt="text" class=" floating-text1 top-[70%]" src="House Starks.png" />
+		<img alt="date" class="floating-text2 top-[84%] left-[20%]" src="02.10.2024.png" />
+		<img alt="text" class="floating-text3 top-[20%]" src="Over The Gard.png" />
 	</div>
 </main>
 
@@ -78,20 +78,28 @@
 	}
 
 
-.floating-text {
+.floating-text1 {
+      animation: float 19s ease-in-out infinite;
+        display: inline-block;
+  }
+.floating-text2 {
       animation: float 13s ease-in-out infinite;
+        display: inline-block;
+  }
+.floating-text3 {
+      animation: float 10s ease-in-out infinite;
         display: inline-block;
   }
 
   @keyframes float {
     0% {
-      transform: translateY(0);
+      transform:  translate(0, 0);
       }
     50% {
-      transform: translateY(-10px);
+      transform: translate(-10px, 10px);
       }
     100% {
-      transform: translateY(0);
+      transform: translate(0,0);
       }
   }
 </style>
